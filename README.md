@@ -1,2 +1,3 @@
 # Sprint7_proyect
-It's the culmination of many days of savings and a lot of obsession for being the best.
+It's the culmination of many days of savings and a lot of obsession for being the best, right now is not the best, but it will be some day
+This proyect is about the use in the diferents ambients, cloning repositories even to know how to deal wit all the posibilities that we have as data cientist, at least by now, having troubles geting with all my stuff i fell great to be here and wonderfull of being able to learn and grow in this field, at least everithing it's running ok.
