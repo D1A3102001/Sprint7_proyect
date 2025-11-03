@@ -1,3 +1,5 @@
+"""Aplicación Streamlit para visualizar datos de anuncios de venta de coches en EE.UU.
+Permite a los usuarios construir histogramas y gráficos de dispersión basados en el conjunto de datos proporcionado."""
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
