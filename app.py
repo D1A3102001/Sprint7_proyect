@@ -1,8 +1,17 @@
-"""Aplicación Streamlit para visualizar datos de anuncios de venta de coches en EE.UU.
-Permite a los usuarios construir histogramas y gráficos de dispersión basados en el conjunto de datos proporcionado."""
+
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
+
+# Título de la aplicación
+st.title("Aplicación de Visualización de Datos de Anuncios de Coches")
+
+# Descripción con Markdown
+st.markdown("""
+    **Aplicación Streamlit para visualizar datos de anuncios de venta de coches en EE.UU.**  
+    Permite a los usuarios construir histogramas y gráficos de dispersión basados en el conjunto de datos proporcionado.
+""")
+
 car_data = pd.read_csv('vehicles_us.csv')
 build_histogram = st.checkbox('Construir histograma')
 build_scatter = st.checkbox('Construir grafico de dispersion')
@@ -16,4 +25,5 @@ if build_scatter:
     st.write('Creación de un grafico de dispersion para el conjunto de datos de anuncios de venta de coches')
     fig = go.Figure(data=[go.Scatter(x=car_data['odometer'], y=car_data['price'], mode='markers')])
     fig.update_layout(title_text='Relación entre Odómetro y Precio')
+
     st.plotly_chart(fig, use_container_width=True)
